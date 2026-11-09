@@ -14,7 +14,7 @@ class Mario{
 
     moveLeft(): number {
         this.positionX -= this.speed;
-        return this.positionX -= this.speed;
+        return this.positionX;
     }
 
     getSuperMushroom(): void {
@@ -31,7 +31,7 @@ class Mario{
 
     getSuperStar(): void{
     this.invincible = true;
-    console.log(`Mario mengambil super star! sekarang keballlll.`);
+    console.log(`Mario mengambil super star! sekarang kebal.`);
     }
 
     shootFireball(): void {
