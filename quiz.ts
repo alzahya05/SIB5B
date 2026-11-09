@@ -7,14 +7,14 @@ class Mario{
     currentForm : string = 'mario';
 
 
-   moveRight(): void {
+   moveRight(): number {
         this.positionX += this.speed;
-        console.log(`Mario bergerak ke kanan. posisi X : ${this.positionX}`);
-    }
+        return this.positionX;
+   }
 
-    moveLeft(): void {
+    moveLeft(): number {
         this.positionX -= this.speed;
-        console.log(`Mario bergerak ke Kiri. posisi X :${this.positionX}`);
+        return this.positionX -= this.speed;
     }
 
     getSuperMushroom(): void {
